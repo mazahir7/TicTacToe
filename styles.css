@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  line-height: 1;
+  background-color: #caf0f8;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  /* margin-top: 100px; */
+}
+
+p {
+  text-align: center;
+  font-weight: 900;
+  font-size: 5rem;
+  padding: 8rem 0;
+}
+
+span {
+  color: #0077b6;
+}
+
+input {
+  font-family: "Roboto Slab", serif;
+  width: 30rem;
+  height: 4rem;
+  margin: 1rem auto;
+  border: 2px #0077b6 solid;
+  border-radius: 9px;
+  background-color: #025683;
+  color: #fbff00;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+input::placeholder {
+  color: #fbff00;
+}
+input:hover {
+  background-color: #0077b6;
+}
+
+.name {
+  width: 50rem;
+  height: 40rem;
+  display: flex;
+  /* justify-content: space-between; */
+  flex-direction: column;
+  gap: 9rem;
+  margin-top: 10rem;
+}
+
+.game-start {
+  position: absolute;
+  z-index: 9999;
+  color: #4c934c;
+  background-color: #ffea81;
+  width: 50rem;
+  height: 60rem;
+  border-radius: 11px;
+  border: 3px #ffc300 solid;
+
+  /* In relation to the PARENT size */
+  /* top: 50%; */
+  left: 50%;
+
+  /* In relation to the ELEMENT size */
+  transform: translate(-50%, 3%);
+}
+
+.ttt:hover span {
+  color: #03045e;
+  transition: all 0.3s;
+}
+
+.container {
+  /* margin: 20rem auto 0; */
+
+  position: absolute;
+  top: 25%;
+  left: 50%;
+
+  transform: translate(-50%, 25%);
+  background-color: #fff;
+
+  width: 45rem;
+  height: 45rem;
+  display: none;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+
+  border-radius: 25px;
+}
+
+.ttt {
+  background-color: #0077b6;
+
+  width: 148px;
+  height: 148px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.ttt:hover {
+  background-color: #03045e;
+
+  transition: all 0.3s;
+}
+
+.fa-solid {
+  font-size: 15rem;
+  /* color: #ffc300; */
+  color: #ffd60a;
+}
+
+.winner {
+  display: none;
+  position: absolute;
+  z-index: 9999;
+  color: #4c934c;
+  background-color: #ffea81;
+  width: 70rem;
+  height: 36rem;
+  border-radius: 11px;
+  /* border: 3px #ffc300 solid; */
+
+  /* In relation to the PARENT size */
+  /* top: 50%; */
+  left: 50%;
+
+  /* In relation to the ELEMENT size */
+  transform: translate(-50%, 35%);
+
+  box-shadow: 0 0 22px 2px rgb(87, 74, 2);
+}
+
+.play-again {
+  position: absolute;
+  font-size: 2.5rem;
+  background-color: #caf0f8;
+  border: 3px #4c934c solid;
+  padding: 3rem 6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 11px;
+}
+
+.play-again:hover {
+  font-family: inherit;
+  background-color: #fbff00;
+  transition: all 0.5s;
+}
+
+.one {
+  border-top-left-radius: 22px;
+}
+.three {
+  border-top-right-radius: 22px;
+}
+
+.seven {
+  border-bottom-left-radius: 22px;
+}
+
+.nine {
+  border-bottom-right-radius: 22px;
+}
+
+.block-helper {
+  display: block !important;
+}
+.none-helper {
+  display: none !important;
+}
+
+@media (max-width: 35em) {
+  html {
+    font-size: 50%;
+  }
+  .game-start {
+    width: 45rem;
+    height: 60rem;
+
+    /* In relation to the ELEMENT size */
+    transform: translate(-50%, 13%);
+  }
+
+  .name {
+    width: 45rem;
+    height: 40rem;
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: column;
+    gap: 9rem;
+    margin-top: 10rem;
+  }
+
+  .ttt {
+    width: 126px;
+    height: 146px;
+  }
+
+  .fa-solid {
+    font-size: 15rem;
+  }
+
+  .winner {
+    width: 50rem;
+    height: 36rem;
+  }
+
+  p {
+    font-size: 3.5rem;
+    padding: 6rem 0;
+  }
+
+  .play-again {
+    font-size: 2.5rem;
+
+    padding: 2rem 11rem;
+  }
+}
