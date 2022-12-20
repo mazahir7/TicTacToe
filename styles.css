@@ -250,3 +250,10 @@ input:hover {
     transform: translate(6%, 25%);
   }
 }
+
+@media (max-width: 27em) {
+  .ttt {
+    width: 108px;
+    transform: translate(26%, 25%);
+  }
+}
