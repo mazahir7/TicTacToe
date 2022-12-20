@@ -239,3 +239,14 @@ input:hover {
     height: 50rem;
   }
 }
+
+
+@media (max-width: 29em) {
+  .container {
+    background-color: transparent;
+  }
+  .ttt {
+    width: 120px;
+    transform: translate(6%, 25%);
+  }
+}
