@@ -232,4 +232,10 @@ input:hover {
 
     padding: 2rem 11rem;
   }
+  .container {
+    transform: translate(-75%, 25%);
+
+    width: 34rem;
+    height: 50rem;
+  }
 }
